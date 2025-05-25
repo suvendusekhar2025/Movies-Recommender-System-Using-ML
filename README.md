@@ -91,57 +91,57 @@ Handling missing values
 # What I have Learnt!
 By exploring this project, you will gain hands-on experience in the following areas:
 
-1. Data Collection and Understanding
-Loading and merging two real-world datasets: tmdb_5000_movies.csv and tmdb_5000_credits.csv.
+1. Data Collection and Understanding:
+  - Loading and merging two real-world datasets: tmdb_5000_movies.csv and tmdb_5000_credits.csv.
 
-Understanding the structure and key components of a movie dataset, including metadata such as genres, cast, crew, and descriptions.
+  - Understanding the structure and key components of a movie dataset, including metadata such as genres, cast, crew, and descriptions.
 
-2. Data Cleaning and Preprocessing
-Parsing and extracting information from stringified JSON columns (e.g., genres, keywords, cast, crew).
+2. Data Cleaning and Preprocessing:
+  - Parsing and extracting information from stringified JSON columns (e.g., genres, keywords, cast, crew).
 
-Selecting relevant features for a recommender system.
+  - Selecting relevant features for a recommender system.
 
-Handling missing values in the dataset.
+  - Handling missing values in the dataset.
 
-Text preprocessing using natural language processing techniques, including:
+  - Text preprocessing using natural language processing techniques, including:
 
-Tokenization
+  - Tokenization
 
-Lowercasing
+  - Lowercasing
 
-Removing spaces
+  - Removing spaces
 
-Stemming (using the Porter Stemmer from NLTK)
+  - Stemming (using the Porter Stemmer from NLTK)
 
-3. Feature Engineering
-Creating a consolidated textual feature (tags) by combining genre, overview, keywords, cast, and crew data into a single string.
+3. Feature Engineering:
+  - Creating a consolidated textual feature (tags) by combining genre, overview, keywords, cast, and crew data into a single string.
 
-Vectorizing the text data using CountVectorizer to convert it into a numerical format.
+  - Vectorizing the text data using CountVectorizer to convert it into a numerical format.
 
 Limiting the number of features (maximum features = 5000) and removing English stopwords to focus on meaningful words.
 
-4. Similarity Calculation
-Applying cosine similarity on the vectorized data to calculate the similarity score between all movies.
+4. Similarity Calculation:
+  - Applying cosine similarity on the vectorized data to calculate the similarity score between all movies.
 
-Understanding how similarity matrices are used in content-based filtering to rank and recommend items.
+  - Understanding how similarity matrices are used in content-based filtering to rank and recommend items.
 
-5. Recommendation Logic
-Building a function that takes a movie name as input and returns the top 5 most similar movies based on the cosine similarity scores.
+5. Recommendation Logic:
+  - Building a function that takes a movie name as input and returns the top 5 most similar movies based on the cosine similarity scores.
 
-Using indexing and sorting logic to retrieve and display recommendations.
+  - Using indexing and sorting logic to retrieve and display recommendations.
 
-6. Deployment with Streamlit
-Creating a simple web-based interface using Streamlit to allow users to select a movie and view recommendations.
+6. Deployment with Streamlit:
+  - Creating a simple web-based interface using Streamlit to allow users to select a movie and view recommendations.
 
-Making the recommender system interactive and user-friendly.
+  - Making the recommender system interactive and user-friendly.
 
-Key Takeaways
-How to transform textual movie data into numerical vectors using NLP.
+Key Takeaways: 
+ - How to transform textual movie data into numerical vectors using NLP.
 
-How to use cosine similarity for content-based recommendation.
+ - How to use cosine similarity for content-based recommendation.
 
-How to process and combine different data fields into one unified text feature.
+ - How to process and combine different data fields into one unified text feature.
 
-How to structure a machine learning project from data preprocessing to deployment.
+ - How to structure a machine learning project from data preprocessing to deployment.
 
-How to build a minimal interactive UI using Streamlit for demonstration purposes.
+ - How to build a minimal interactive UI using Streamlit for demonstration purposes.
